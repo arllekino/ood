@@ -1,0 +1,69 @@
+add_executable(redactor
+        CommandLineParser/CommandLineParser.cpp
+        CommandLineParser/CommandLineParser.h
+        Action/ActionType.h
+        CommandLineParameters/InsertParagraphParameters.h
+        CommandLineParameters/InsertImageParameters.h
+        CommandLineParameters/SetTitleParameters.h
+        CommandLineParameters/ReplaceTextParamaters.h
+        CommandLineParameters/ResizeImageParameters.h
+        CommandLineParameters/SaveDocumentParameters.h
+        CommandLineParameters/Position.h
+        Document/IDocument.h
+        Path/Path.h
+        DocumentItem/Paragraph/IParagraph.h
+        DocumentItem/Paragraph/CParagraph.h
+        DocumentItem/Image/IImage.h
+        DocumentItem/Image/CImage.h
+        DocumentItem/CDocumentItem.h
+        Document/CDocument.h
+        Command/ICommand.h
+        Command/InsertParagraphCommand.h
+        Command/InsertImageCommand.h
+        Command/SetTitleCommand.h
+        Command/ReplaceTextCommand.h
+        Command/ResizeImageCommand.h
+        Command/DeleteItemCommand.h
+        DocumentController/DocumentController.h
+        main.cpp
+        History/History.h
+)
+
+add_executable(redactorTest
+        CommandLineParser/CommandLineParser.cpp
+        CommandLineParser/CommandLineParser.h
+        Action/ActionType.h
+        CommandLineParameters/InsertParagraphParameters.h
+        CommandLineParameters/InsertImageParameters.h
+        CommandLineParameters/SetTitleParameters.h
+        CommandLineParameters/ReplaceTextParamaters.h
+        CommandLineParameters/ResizeImageParameters.h
+        CommandLineParameters/SaveDocumentParameters.h
+        CommandLineParameters/Position.h
+        Document/IDocument.h
+        Path/Path.h
+        DocumentItem/Paragraph/IParagraph.h
+        DocumentItem/Paragraph/CParagraph.h
+        DocumentItem/Image/IImage.h
+        DocumentItem/Image/CImage.h
+        DocumentItem/CDocumentItem.h
+        Document/CDocument.h
+        Command/ICommand.h
+        Command/InsertParagraphCommand.h
+        Command/InsertImageCommand.h
+        Command/SetTitleCommand.h
+        Command/ReplaceTextCommand.h
+        Command/ResizeImageCommand.h
+        Command/DeleteItemCommand.h
+        DocumentController/DocumentController.h
+        test/CommandLineParserTest.cpp
+        test/CDocumentTest.cpp
+        test/CommandTests.cpp
+        test/DocumentControllerTests.cpp
+        test/HistoryTest.cpp
+)
+
+target_link_libraries(redactorTest PRIVATE Catch2::Catch2WithMain)
+include(CTest)
+include(Catch)
+catch_discover_tests(redactorTest)

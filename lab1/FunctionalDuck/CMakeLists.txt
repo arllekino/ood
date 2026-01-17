@@ -1,0 +1,12 @@
+add_executable(FunctionalDuck
+        Duck/Dance/DanceBehavior.h
+        Duck/Fly/FlyBehavior.h
+        Duck/Quack/QuackBehavior.h
+        Duck/Duck.h
+        Duck/DecoyDuck.h
+        Duck/MallardDuck.h
+        Duck/ModelDuck.h
+        Duck/RedheadDuck.h
+        Duck/RubberDuck.h
+        main.cpp
+)

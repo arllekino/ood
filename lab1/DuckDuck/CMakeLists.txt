@@ -1,0 +1,49 @@
+add_executable(duck
+        Duck/Fly/IFlyBehavior.h
+        Duck/Fly/FlyWithWings.h
+        Duck/Fly/FlyNoWay.h
+        Duck/Quack/IQuackBehavior.h
+        Duck/Quack/MuteQuackBehavior.h
+        Duck/Quack/QuackBehavior.h
+        Duck/Quack/SqueakBehavior.h
+        Duck/Duck.h
+        Duck/DecoyDuck.h
+        Duck/MallardDuck.h
+        Duck/ModelDuck.h
+        Duck/RedheadDuck.h
+        Duck/RubberDuck.h
+        DuckFunctions.h
+        Duck/Dance/IDanceBehavior.h
+        Duck/Dance/DanceWaltz.h
+        Duck/Dance/DanceMenuet.h
+        Duck/Dance/DanceNothing.h
+        Duck/Fly/FlyWithWingsAndQuack.h
+        main.cpp
+)
+
+add_executable(duckTest
+        Duck/Fly/IFlyBehavior.h
+        Duck/Fly/FlyWithWings.h
+        Duck/Fly/FlyNoWay.h
+        Duck/Quack/IQuackBehavior.h
+        Duck/Quack/MuteQuackBehavior.h
+        Duck/Quack/QuackBehavior.h
+        Duck/Quack/SqueakBehavior.h
+        Duck/Duck.h
+        Duck/DecoyDuck.h
+        Duck/MallardDuck.h
+        Duck/ModelDuck.h
+        Duck/RedheadDuck.h
+        Duck/RubberDuck.h
+        DuckFunctions.h
+        Duck/Dance/IDanceBehavior.h
+        Duck/Dance/DanceWaltz.h
+        Duck/Dance/DanceMenuet.h
+        Duck/Dance/DanceNothing.h
+        test/test.cpp)
+
+target_link_libraries(duckTest PRIVATE Catch2::Catch2WithMain)
+
+include(CTest)
+include(Catch)
+catch_discover_tests(duckTest)

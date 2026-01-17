@@ -1,0 +1,51 @@
+AddShape rect1 #000000 rectangle 230 80 140 260
+AddShape body #F9BF8B rectangle 230 80 140 260
+AddShape eye1_out #000000 circle 250 130 25
+AddShape eye1_in #ffffff circle 250 130 25
+AddShape eye1_pupil #000000 circle 250 130 12
+AddShape eye2_out #000000 circle 310 130 25
+AddShape eye2_in #ffffff circle 310 130 25
+AddShape eye2_pupil #000000 circle 310 130 12
+AddShape nose1 #000000 line 280 145 270 171
+AddShape nose2 #000000 line 267 168 295 168
+AddShape mouth1 #000000 line 260 200 262 201
+AddShape mouth2 #000000 line 262 201 264 202
+AddShape mouth3 #000000 line 264 202 266 203
+AddShape mouth4 #000000 line 266 203 268 204
+AddShape mouth5 #000000 line 268 204 270 205
+AddShape mouth6 #000000 line 270 205 272 206
+AddShape mouth7 #000000 line 272 206 274 207
+AddShape mouth8 #000000 line 274 207 276 208
+AddShape mouth9 #000000 line 276 208 278 209
+AddShape mouth10 #000000 line 278 209 280 210
+AddShape mouth11 #000000 line 277 210 281 210
+AddShape mouth12 #000000 line 280 210 282 209
+AddShape mouth13 #000000 line 282 209 284 208
+AddShape mouth14 #000000 line 284 208 286 207
+AddShape mouth15 #000000 line 286 207 288 206
+AddShape mouth16 #000000 line 288 206 290 205
+AddShape mouth17 #000000 line 290 205 292 204
+AddShape mouth18 #000000 line 292 204 294 203
+AddShape mouth19 #000000 line 294 203 296 202
+AddShape mouth20 #000000 line 296 202 298 201
+AddShape mouth21 #000000 line 298 201 300 200
+AddShape arm1 #000000 line 230 200 210 270
+AddShape arm2 #000000 line 210 270 175 300
+AddShape hand1 #F9BF8B triangle 175 300 182 315 165 310
+AddShape hand2 #C4541E triangle 182 315 192 325 184 330
+AddShape arm3 #000000 line 175 300 163 270
+AddShape arm4 #000000 line 165 305 160 272
+AddShape arm5 #000000 line 374 200 400 270
+AddShape wing1 #000000 line 100 105 175 270
+AddShape wing2 #000000 line 175 270 150 283
+AddShape wing3 #000000 line 70 120 150 283
+AddShape wing4 #000000 line 70 120 100 105
+AddShape leg1 #000000 line 400 270 400 340
+AddShape foot1 #F9BF8B triangle 398 340 406 360 388 360
+AddShape leg2 #000000 line 270 340 270 440
+AddShape leg3 #000000 line 330 340 330 440
+AddShape shoe1 #F9BF8B triangle 220 440 280 440 268 410
+AddShape shoe2 #F9BF8B triangle 310 440 350 440 328 410
+AddShape tyntynsahur #000000 text 500 200 24 TynTynTyn
+AddShape polygonchik #E6AC0C polygon 500 300 50 10
+DrawPicture
